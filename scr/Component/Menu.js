@@ -11,12 +11,12 @@ import {
     View
 } from 'react-native';
 
-import {SideMenu} from './Router';
-
-export default class App extends Component {
+export default class Menu extends Component {
     render() {
         return (
-            <SideMenu/>
+            <View style={styles.container}>
+                <Text>Menu</Text>
+            </View>
         );
     }
 }
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#2032ff',
     },
     welcome: {
         fontSize: 20,

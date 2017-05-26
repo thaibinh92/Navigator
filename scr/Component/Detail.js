@@ -8,15 +8,19 @@ import React, { Component } from 'react';
 import {
     StyleSheet,
     Text,
-    View
+    View,
+    TouchableOpacity
 } from 'react-native';
 
-import {SideMenu} from './Router';
-
-export default class App extends Component {
+export default class Detail extends Component {
     render() {
         return (
-            <SideMenu/>
+            <View style={styles.container}>
+                <Text>Detail</Text>
+                <TouchableOpacity>
+                    <Text>Go Back</Text>
+                </TouchableOpacity>
+            </View>
         );
     }
 }
@@ -26,7 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#2b90c1',
     },
     welcome: {
         fontSize: 20,
@@ -39,4 +43,5 @@ const styles = StyleSheet.create({
         marginBottom: 5,
     },
 });
+
 
